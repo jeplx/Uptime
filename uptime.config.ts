@@ -29,7 +29,7 @@ const workerConfig = {
       statusPageLink: 'https://puptr.ee',
       hideLatencyChart: false,
       responseForbiddenKeyword: 'bad gateway',
-      checkLocationWorkerRoute: 'https://status.puptr.ee',
+      // checkLocationWorkerRoute: 'https://status.puptr.ee',
     },
   ],
   notification: {
