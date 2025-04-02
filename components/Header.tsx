@@ -22,9 +22,6 @@ export default function Header() {
       <Container size="md" className={classes.inner}>
         <div>
           <a href="https://puptr.ee" target="_blank">
-            <Text size="xl" span>
-              🕒
-            </Text>
             <Text
               size="xl"
               span
