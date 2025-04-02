@@ -21,7 +21,7 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <a href="https://github.com/lyc8503/UptimeFlare" target="_blank">
+          <a href="https://puptr.ee" style="text-decoration: none;" target="_blank">
             <Text size="xl" span>
               🕒
             </Text>
@@ -30,9 +30,9 @@ export default function Header() {
               span
               fw={700}
               variant="gradient"
-              gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+              gradient={{ from: 'green', to: 'cyan', deg: 90 }}
             >
-              UptimeFlare
+              Puptr.ee Status
             </Text>
           </a>
         </div>
