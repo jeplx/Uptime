@@ -27,7 +27,9 @@ const workerConfig = {
       target: 'https://puptr.ee',
       tooltip: 'Check if Puptr.ee is up and working',
       statusPageLink: 'https://puptr.ee',
+      hideLatencyChart: false,
       responseForbiddenKeyword: 'bad gateway',
+      checkLocationWorkerRoute: 'https://status.puptr.ee',
     },
   ],
   notification: {
@@ -38,7 +40,7 @@ const workerConfig = {
     // if not specified, no notification will be sent
     // recipientUrl: "tgram://bottoken/ChatID",
     // [Optional] timezone used in notification messages, default to "Etc/GMT"
-    // timeZone: "Europe/London",
+     timeZone: "Europe/London",
     // [Optional] grace period in minutes before sending a notification
     // notification will be sent only if the monitor is down for N continuous checks after the initial failure
     // if not specified, notification will be sent immediately
