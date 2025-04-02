@@ -11,7 +11,6 @@ const pageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     "🌐 Public": ['puptree_monitor', 'bar_monitor', 'more monitor ids...'],
-    "🔐 Private": ['test_tcp_monitor'],
   },
 }
 
@@ -42,20 +41,13 @@ const workerConfig = {
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
-      // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
-      // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
       responseKeyword: 'success',
       // [OPTIONAL] if specified, the response must NOT contains the keyword to be considered as operational.
       responseForbiddenKeyword: 'bad gateway',
       // [OPTIONAL] if specified, the check will run in your specified region,
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      checkLocationWorkerRoute: 'https://xxx.example.com',
+      checkLocationWorkerRoute: 'https://status.puptr.ee',
     },
   ],
   notification: {
